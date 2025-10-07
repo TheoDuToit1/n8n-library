@@ -4,7 +4,7 @@
   "description": "A lightweight static site to browse and view your n8n projects/templates. Includes search, filters, and light/dark theme (default: light). Project details open in a modal popup on the main page.",
   "main": "index.js",
   "scripts": {
-    "dev": "live-server",
+    "dev": "live-server public",
     "build": "echo 'No build step required for static site'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
