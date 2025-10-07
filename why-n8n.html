@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Why n8n — n8n Projects Library</title>
+    <meta name="description" content="Why n8n, my approach, and how free templates can impact your business." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mogra&family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Charts library (versioned) -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.46.0/dist/apexcharts.min.js"></script>
+    <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <div class="app">
+      <main class="content">
+        <!-- Hero Slider (same visuals, no search) -->
+        <section>
+          <div class="slider">
+            <div class="slides">
+              <img src="https://blog.humive.com/content/images/size/w600/2025/08/Untitled-design--1-.png" class="slide active" />
+              <img src="https://blog.n8n.io/content/images/size/w1200/2025/05/itops1--1-.png" class="slide" />
+              <img src="https://blog.n8n.io/content/images/size/w1200/2023/05/building-api-6.png" class="slide" />
+              <img src="https://blog.n8n.io/content/images/2023/02/api-chart-1-8.png" class="slide" />
+            </div>
+
+            <div class="bottom-center" style="text-align:center;">
+              <button class="button" data-text="Automate in Hours — Not Days" onclick="location.href='#why-templates'">
+                <span class="actual-text">&nbsp;Automate in Hours — Not Days&nbsp;</span>
+                <span aria-hidden="true" class="hover-text">&nbsp;Automate in Hours — Not Days&nbsp;</span>
+              </button>
+              <div class="muted" style="margin-top:8px; font-weight:600;">Used by 100k+ builders worldwide • Start free with my templates</div>
+
+
+              <div class="indicators" aria-hidden="true">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+              </div>
+            </div>
+            <div style="margin-top:14px; display:flex; justify-content:center;">
+              <a href="#why-templates" class="btn btn-primary" style="padding:10px 14px; font-weight:700;">
+                Steal My Templates & Try n8n Free
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Why n8n section -->
+        <section class="container" id="why-n8n" style="margin-top:24px;">
+          <div class="panel">
+            <h2 class="h-scribble">Why n8n</h2>
+            <p class="muted hook-line">What once took a whole team, you can now do yourself.</p>
+            <p class="muted p-soft">n8n makes automation simple: connect your tools, drag nodes, and watch workflows run.</p>
+            <p class="muted p-soft">It looks complex from the outside—but once you try it, it’s easier than you think.</p>
+          </div>
+        </section>
+
+        <!-- Why I use n8n -->
+        <section class="container" id="why-me">
+          <div class="panel">
+            <h2 class="h-scribble">Why I Use n8n</h2>
+            <p class="muted hook-line">I use n8n because it’s like LEGO for automation—simple to build, powerful to scale.</p>
+            <p class="muted p-soft">It’s drag-and-drop, self-hosted, and affordable, giving me freedom without limits or lock-in.</p>
+            <p class="muted p-soft">From quick automations to full systems, my only limit is imagination.</p>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px;">
+              <!-- Sales Card with Area Chart (ApexCharts) -->
+              <div class="panel" style="min-height:280px; display:flex; flex-direction:column; gap:10px;">
+                <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:12px;">
+                  <div>
+                    <h3 style="margin:0; font: 700 24px/1 Poppins, Inter, sans-serif; color: var(--primary);">$12,423</h3>
+                    <p class="muted" style="margin:4px 0 0;">Sales this week</p>
+                  </div>
+                  <div style="display:flex; align-items:center; gap:6px; color: var(--green); font-weight:700;">
+                    23%
+                    <svg width="12" height="12" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M5 13V1M5 1L1 5M5 1l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+                <div id="grid-chart" style="width:100%; height:180px;"></div>
+                <div class="muted" style="font-size:12px;">Context: A 5‑node outreach workflow saved ~30h last week and drove $12,423 in revenue. Cost: n8n $5.</div>
+              </div>
+
+              <!-- Profit Summary with Horizontal Bar Chart (ApexCharts) -->
+              <div class="panel" style="min-height:280px; display:flex; flex-direction:column; gap:10px;">
+                <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:12px; border-bottom:1px solid var(--border); padding-bottom:10px;">
+                  <div>
+                    <div class="muted" style="margin:0 0 4px; font-weight:600;">Profit this week</div>
+                    <h3 style="margin:0; font: 700 24px/1 Poppins, Inter, sans-serif; color: var(--primary);">$12,423</h3>
+                  </div>
+                  <span style="display:inline-flex; align-items:center; gap:6px; font-size: 12px; font-weight:700; padding: 4px 8px; border-radius: 8px; background: color-mix(in srgb, var(--green) 15%, transparent); color: var(--green);">
+                    <svg width="10" height="10" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M5 13V1M5 1L1 5M5 1l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Profit rate 23.5%
+                  </span>
+                </div>
+
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; padding: 6px 0;">
+                  <div>
+                    <div class="muted" style="margin:0 0 4px;">Income</div>
+                    <div style="font: 700 18px/1 Poppins, Inter, sans-serif; color: var(--green);">$12,423</div>
+                  </div>
+                  <div>
+                    <div class="muted" style="margin:0 0 4px;">Expense</div>
+                    <div style="font: 700 18px/1 Poppins, Inter, sans-serif; color: #F05252;">-$5</div>
+                  </div>
+                </div>
+
+                <div id="bar-chart" style="width:100%; height:200px;"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Why free templates -->
+        <section class="container" id="why-templates">
+          <div class="panel">
+            <h2>Why I’m Giving Out Free Templates</h2>
+            <p class="muted hook-line">Automation looks <span class="em-underline">harder than it is.</span> These free templates prove it’s not.</p>
+            <p class="muted p-soft">Steal them, adapt them, and see how <span class="blue-strong">easy automation</span> gets.</p>
+            <div style="display:grid; grid-template-columns: 1.3fr .7fr; gap:16px; margin-top:12px; align-items:center;">
+              <!-- Bigger image: 2 nodes demo (Get new email -> Send to Slack) -->
+              <figure class="panel" style="display:flex; flex-direction:column; gap:10px; align-items:center; justify-content:center;">
+                <div class="ab-border" style="width:100%;">
+                  <img src="./assets/img/2%20trigger%20node.jpg" alt="n8n 2-node flow: new email to Slack" style="width:100%; height:auto; max-height:460px; object-fit:contain;" />
+                </div>
+                <figcaption class="muted" style="text-align:center;">
+                  Get new email → Send to Slack (simple 2-node workflow)
+                </figcaption>
+              </figure>
+
+              <!-- Arrow + explanation pointing to the image -->
+              <div class="panel callout-card" style="display:flex; flex-direction:column; gap:12px; text-align:left;">
+                <div style="display:flex; align-items:center; gap:12px;">
+                  <!-- Left-pointing arrow with pulse -->
+                  <svg class="arrow-pulse" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="flex: 0 0 auto;">
+                    <path d="M14 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div>
+                    <div class="callout-title">That 1 workflow took 5 minutes</div>
+                    <p class="callout-sub">
+                      What could take a human a full day to check for incoming emails,
+                      this 1 simple flow does it for me.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Compare: n8n vs Zapier vs Make -->
+        <section class="container" id="compare">
+          <div class="panel">
+            <h2 style="text-align:center;">How n8n Stacks Up Against the Rest</h2>
+            <p class="subtext">See why n8n makes automation more flexible and affordable.</p>
+            <table class="compare-table" role="table" aria-label="n8n vs Make vs Zapier">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th class="col-n8n">
+                    <div class="compare-head"><img src="./assets/icons/n8n-color.svg" alt="n8n"/><span class="compare-name">n8n</span></div>
+                  </th>
+                  <th>
+                    <div class="compare-head"><img src="./assets/icons/make-color.svg" alt="Make"/><span class="compare-name">Make</span></div>
+                  </th>
+                  <th>
+                    <div class="compare-head"><img src="./assets/icons/zapier-icon.svg" alt="Zapier"/><span class="compare-name">Zapier</span></div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Pricing / Flexibility</strong></td>
+                  <td class="col-n8n">Open‑source, self‑hosted or cloud. Pay for what you use.</td>
+                  <td>Usage tiers; affordable early, scales with usage.</td>
+                  <td>Usage‑based; can get expensive at scale.</td>
+                </tr>
+                <tr>
+                  <td><strong>Customization</strong></td>
+                  <td class="col-n8n"><span class="yes">✅</span> Drag‑and‑drop + code nodes + webhooks</td>
+                  <td><span class="yes">✅</span> Visual builder; some limits on complex logic</td>
+                  <td><span class="no">❌</span> Limited advanced branching / custom code</td>
+                </tr>
+                <tr>
+                  <td><strong>Scalability</strong></td>
+                  <td class="col-n8n"><span class="yes">✅</span> Self‑hosting, queues, error handling</td>
+                  <td><span class="yes">✅</span> Scales for most SMB use cases</td>
+                  <td><span class="no">❌</span> Hits a wall fast on complex workflows</td>
+                </tr>
+                <tr>
+                  <td><strong>Integrations</strong></td>
+                  <td class="col-n8n"><span class="yes">✅</span> Hundreds + custom API nodes</td>
+                  <td><span class="yes">✅</span> Many popular apps</td>
+                  <td><span class="yes">✅</span> Many prebuilt zaps</td>
+                </tr>
+                <tr>
+                  <td><strong>Best for…</strong></td>
+                  <td class="col-n8n">Builders who want flexibility, ownership, and scale.</td>
+                  <td>Teams who want a visual builder and quick scenarios.</td>
+                  <td>Non‑technical users who need simple automations fast.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Mobile fallback cards -->
+            <div class="compare-cards" aria-hidden="true">
+              <div class="compare-card">
+                <div class="hdr"><img src="./assets/icons/n8n-color.svg" alt="n8n"/><span>n8n</span></div>
+                <ul>
+                  <li>Open‑source; self‑hosted or cloud</li>
+                  <li>Drag‑and‑drop + code nodes</li>
+                  <li>Scales with queues and error handling</li>
+                  <li>Hundreds of integrations + custom APIs</li>
+                  <li>Best for flexibility and ownership</li>
+                </ul>
+              </div>
+              <div class="compare-card">
+                <div class="hdr"><img src="./assets/icons/make-color.svg" alt="Make"/><span>Make</span></div>
+                <ul>
+                  <li>Visual scenarios</li>
+                  <li>Good integrations</li>
+                  <li>Complexity grows in large flows</li>
+                  <li>Best for quick scenario building</li>
+                </ul>
+              </div>
+              <div class="compare-card">
+                <div class="hdr"><img src="./assets/icons/zapier-icon.svg" alt="Zapier"/><span>Zapier</span></div>
+                <ul>
+                  <li>Prebuilt zaps</li>
+                  <li>Limited complex logic</li>
+                  <li>Usage‑based pricing scales up</li>
+                  <li>Best for simple automations</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Try n8n: Bottom CTA -->
+        <section class="container" id="try">
+          <div class="panel">
+            <h2 class="h-scribble">You’ve seen the power — test it free for 1 week</h2>
+            <p class="lead">One week with these templates will teach you more than any pitch. If it clicks, you’ve found your tool. If not, no stress.</p>
+            <div class="try-grid">
+              <div>
+                <p class="muted hook-line">I could explain n8n forever… or you could just try it.</p>
+                <p class="muted p-accent">I don’t get anything out of this. I share because I know what it feels like to overlook n8n. I was skeptical too—thought it was clunky and stuck with Make.com. I was wrong. Once I gave n8n a real shot, I realized how powerful (and fun) it actually is.</p>
+                <p class="muted p-soft">Now I share templates and resources so you don’t waste the time I did.</p>
+              </div>
+              <div>
+                <div class="video-card">
+                  <a class="play" href="https://www.youtube.com/results?search_query=n8n+automation+walkthrough" target="_blank" rel="noopener noreferrer" title="Watch the deep dive (8 hours)">
+                    <span class="btn" aria-hidden="true">
+                      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 5v14l11-7z"/>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="video-caption">Want the deep dive? An 8‑hour walkthrough where everything is explained. Dip in, skip around, or binge it—it’s your masterclass in automation.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Bottom navigation (glassmorphism) -->
+    <nav class="bottom-nav" role="navigation" aria-label="Primary">
+      <a href="./index.html" class="bn-item" title="Library">
+        <span class="bn-icon" aria-hidden="true">
+          <!-- Library icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M4 19a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3.5A2.5 2.5 0 0 1 10 7.5V19H4zm8 0V7.5A2.5 2.5 0 0 1 14.5 5H20a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-6zm-7-1h5V7.5c0-.276-.224-.5-.5-.5H5a1 1 0 0 0-1 1V18zm8 0h7V7a1 1 0 0 0-1-1h-5.5c-.276 0-.5.224-.5.5V18z"/>
+          </svg>
+        </span>
+        <span class="bn-label">Library</span>
+      </a>
+      <a href="#" class="bn-item active" title="Why n8n">
+        <span class="bn-icon" aria-hidden="true">
+          <!-- Info/Question icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 15a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm1-4h-2v-.5c0-1.2.8-1.9 1.8-2.6.8-.6 1.2-1 1.2-1.7 0-.9-.8-1.5-2-1.5-1 0-1.9.4-2.6 1.1l-1.2-1.4C8.9 5.7 10.3 5 12 5c2.3 0 3.9 1.3 3.9 3.2 0 1.3-.8 2.2-1.9 2.9-.8.6-1 1-1 1.4V13z"/>
+          </svg>
+        </span>
+        <span class="bn-label">Why n8n</span>
+      </a>
+      <!-- Theme switcher -->
+      <label class="theme-switch">
+        <input type="checkbox" class="theme-switch__checkbox">
+        <div class="theme-switch__container">
+          <div class="theme-switch__clouds"></div>
+          <div class="theme-switch__stars-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9 25.9953C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545Z"/>
+            </svg>
+          </div>
+          <div class="theme-switch__circle-container">
+            <div class="theme-switch__sun-moon-container">
+              <div class="theme-switch__moon">
+                <div class="theme-switch__spot"></div>
+                <div class="theme-switch__spot"></div>
+                <div class="theme-switch__spot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </label>
+    </nav>
+
+    <script>
+      // Minimal slider init for this page (no dependency on main.js)
+      (function(){
+        const slidesContainer = document.querySelector('.slides');
+        if (!slidesContainer) return;
+        const slides = slidesContainer.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        let current = 0;
+        function showSlide(index){
+          if (!slides.length) return;
+          if (index < 0) index = slides.length - 1;
+          if (index >= slides.length) index = 0;
+          current = index;
+          slidesContainer.style.transform = `translateX(-${current * 100}%)`;
+          dots.forEach(d=>d.classList.remove('active'));
+          if (dots[current]) dots[current].classList.add('active');
+        }
+        dots.forEach((dot)=>{
+          dot.addEventListener('click', ()=>{
+            const idx = Number(dot.getAttribute('data-slide')) || 0;
+            showSlide(idx);
+          });
+        });
+        showSlide(0);
+        setInterval(()=> showSlide(current + 1), 4000);
+
+        // theme switch persistence
+        const themeKey = 'theme-preference';
+        const prefers = localStorage.getItem(themeKey) || 'light';
+        document.documentElement.setAttribute('data-theme', prefers);
+        const themeSwitch = document.querySelector('.theme-switch__checkbox');
+        if (themeSwitch) {
+          themeSwitch.checked = (prefers === 'dark');
+          themeSwitch.addEventListener('change', () => {
+            const next = themeSwitch.checked ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem(themeKey, next);
+          });
+        }
+
+        // Page enter/exit transitions
+        const root = document.documentElement;
+        root.classList.add('page-enter');
+        setTimeout(()=> root.classList.remove('page-enter'), 320);
+        const navLinks = Array.from(document.querySelectorAll('.bottom-nav a'));
+        navLinks.forEach(a => {
+          const href = a.getAttribute('href') || '';
+          if (!href || href.startsWith('#')) return;
+          a.addEventListener('click', (e) => {
+            if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || a.target === '_blank') return;
+            e.preventDefault();
+            root.classList.add('page-exit');
+            setTimeout(()=> window.location.href = a.href, 240);
+          });
+        });
+
+        // ApexCharts: Sales area chart
+        const css = getComputedStyle(document.documentElement);
+        const blue = css.getPropertyValue('--blue').trim() || '#1A56DB';
+        const grey = css.getPropertyValue('--muted').trim() || '#9ca3af';
+        const gridEl = document.getElementById('grid-chart');
+        if (gridEl && window.ApexCharts) {
+          const options = {
+            grid: { show: true, strokeDashArray: 4, padding: { left: 2, right: 2, top: -26 } },
+            series: [
+              { name: 'Without n8n', data: [700, 720, 740, 760, 780, 800, 820], color: grey },
+              { name: 'With n8n', data: [1200, 1300, 1400, 1450, 1500, 1600, 1720], color: blue },
+            ],
+            chart: { height: '100%', maxWidth: '100%', type: 'area', fontFamily: 'Inter, Poppins, sans-serif', dropShadow: { enabled: false }, toolbar: { show: false } },
+            tooltip: { enabled: true, x: { show: false } },
+            legend: { show: true },
+            fill: { type: 'gradient', gradient: { opacityFrom: 0.35, opacityTo: 0, gradientToColors: [grey, blue] } },
+            dataLabels: { enabled: false },
+            stroke: { width: 3, curve: 'smooth' },
+            xaxis: { categories: ['01 Feb','02 Feb','03 Feb','04 Feb','05 Feb','06 Feb','07 Feb'], labels: { show: false }, axisBorder: { show: false }, axisTicks: { show: false } },
+            yaxis: { show: false, labels: { formatter: (v)=> '$'+v } },
+          };
+          const chart = new ApexCharts(gridEl, options);
+          chart.render();
+        }
+
+        // ApexCharts: Trend line chart
+        const trendEl = document.getElementById('trend-chart');
+        if (trendEl && window.ApexCharts) {
+          const tOptions = {
+            series: [
+              { name: 'Without n8n', data: [10, 12, 13, 14, 15, 16, 17], color: grey },
+              { name: 'With n8n', data: [12, 16, 20, 28, 36, 48, 60], color: blue },
+            ],
+            chart: { type: 'line', height: '100%', toolbar: { show: false }, animations: { easing: 'easeinout', speed: 700 } },
+            stroke: { curve: 'smooth', width: 3 },
+            markers: { size: 0 },
+            xaxis: { categories: ['W1','W2','W3','W4','W5','W6','W7'], axisBorder:{show:false}, axisTicks:{show:false}, labels:{ style:{ colors: '#9ca3af' } } },
+            yaxis: { show: false },
+            grid: { strokeDashArray: 4 },
+            tooltip: { enabled: true },
+          };
+          const tChart = new ApexCharts(trendEl, tOptions);
+          tChart.render();
+        }
+
+        // ApexCharts: Profit horizontal bar chart
+        const barEl = document.getElementById('bar-chart');
+        if (barEl && window.ApexCharts) {
+          const green = css.getPropertyValue('--green').trim() || '#31C48D';
+          const red = '#F05252';
+          const bOptions = {
+            series: [
+              { name: 'Income', color: green, data: [1800, 1750, 1600, 1900, 2200, 1600, 1573, null] },
+              { name: 'Expense', color: red, data: [null, null, null, null, null, null, null, 5] }
+            ],
+            chart: { type: 'bar', width: '100%', height: 260, toolbar: { show: false }, animations: { easing: 'easeinout', speed: 700 } },
+            plotOptions: { bar: { horizontal: true, barHeight: '35%', borderRadiusApplication: 'end', borderRadius: 6, dataLabels: { position: 'top' } } },
+            legend: { show: true, position: 'bottom' },
+            dataLabels: { enabled: false },
+            tooltip: { shared: false, intersect: true, y: { formatter: (v)=> '$'+v } },
+            xaxis: { categories: ['Mon','Tue','Wed','Thu','Fri','Sat','Sun','n8n'], axisTicks: { show: false }, axisBorder: { show: false }, labels: { style: { fontFamily: 'Inter, Poppins, sans-serif', fontSize: '11px' } } },
+            yaxis: { labels: { style: { fontFamily: 'Inter, Poppins, sans-serif' } } },
+            grid: { show: true, strokeDashArray: 4, padding: { left: 4, right: 8, top: 0, bottom: 4 } },
+            fill: { opacity: 1 }
+          };
+          const bChart = new ApexCharts(barEl, bOptions);
+          bChart.render();
+        }
+      })();
+    </script>
+  </body>
+</html>

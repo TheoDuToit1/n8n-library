@@ -1,0 +1,208 @@
+{
+  "projects": [
+    {
+      "id": "linkedin-profile-extract",
+      "title": "LinkedIn Profile Data Extraction",
+      "description": "Categorize and save LinkedIn profiles to your sheet using a browser extension and n8n.",
+      "useCases": ["Browser Extension Friendly", "Lead Enrichment"],
+      "integrations": ["Google Sheets", "OpenAI", "LinkedIn"],
+      "tags": ["linkedin", "enrichment", "sheets"],
+      "workflowUrl": "http://localhost:5678/workflow/1",
+      "overview": "<p>This workflow scrapes a LinkedIn profile (via your extension capture), classifies it with AI and stores the data in Google Sheets with proper schema.</p>",
+      "owner": "you",
+      "version": "1.0.0",
+      "created": "2025-09-01",
+      "updated": "2025-09-10"
+    },
+    {
+      "id": "personalized-outbound",
+      "title": "Personalized Outbound",
+      "description": "Generate personalized messages after analyzing a LinkedIn profile.",
+      "useCases": ["Sales", "Outbound"],
+      "integrations": ["OpenAI", "Gmail", "Google Sheets"],
+      "tags": ["ai", "email", "sales"],
+      "workflowUrl": "http://localhost:5678/workflow/2",
+      "overview": "<p>Given a profile URL or record, the workflow crafts a context-aware email using your tone and templates, and logs the outreach.</p>",
+      "owner": "you",
+      "version": "0.9.0",
+      "created": "2025-08-20",
+      "updated": "2025-09-05"
+    },
+    {
+      "id": "gmail-to-sheets-logger",
+      "title": "Gmail → Google Sheets Logger",
+      "description": "On new Gmail email, extract subject, sender, timestamp and append a row to Google Sheets.",
+      "useCases": ["Email", "Logging"],
+      "integrations": ["Gmail", "Google Sheets"],
+      "difficulty": "Basic"
+    },
+    {
+      "id": "gmail-to-drive-backup",
+      "title": "Gmail → Google Drive Backup",
+      "description": "Save Gmail attachments to Google Drive and index file links in Google Sheets.",
+      "useCases": ["Email", "Backup"],
+      "integrations": ["Gmail", "Google Drive", "Google Sheets"],
+      "difficulty": "Basic"
+    },
+    {
+      "id": "outlook-to-slack-urgent",
+      "title": "Outlook → Slack Notifications",
+      "description": "Notify Slack #alerts for Outlook emails with 'urgent' in the subject.",
+      "useCases": ["Email", "Alerting"],
+      "integrations": ["Outlook", "Slack"],
+      "difficulty": "Basic"
+    },
+    {
+      "id": "gcal-daily-digest",
+      "title": "Google Calendar Daily Digest",
+      "description": "Send a morning Slack summary of today's Google Calendar events.",
+      "useCases": ["Scheduling", "Reporting"],
+      "integrations": ["Google Calendar", "Slack"],
+      "difficulty": "Basic"
+    },
+    {
+      "id": "youtube-to-sheets-analytics",
+      "title": "YouTube → Sheets Analytics",
+      "description": "Daily fetch of channel metrics (views, likes, comments) appended to Google Sheets.",
+      "useCases": ["Analytics"],
+      "integrations": ["YouTube", "Google Sheets"],
+      "difficulty": "Basic"
+    },
+    {
+      "id": "slack-keyword-alerts",
+      "title": "Slack Keyword Alerts",
+      "description": "Watch Slack #general and email when messages contain tracked keywords.",
+      "useCases": ["Monitoring", "Alerting"],
+      "integrations": ["Slack", "Gmail"],
+      "difficulty": "Basic"
+    },
+    {
+      "id": "reddit-post-saver",
+      "title": "Reddit Post Saver",
+      "description": "Save new subreddit posts (title, URL, author) into Google Docs.",
+      "useCases": ["Curation"],
+      "integrations": ["Reddit", "Docs"],
+      "difficulty": "Basic"
+    },
+    {
+      "id": "chat-to-gmail-forwarder",
+      "title": "Chat → Gmail Forwarder",
+      "description": "Forward incoming Chat messages to Gmail with sender and text.",
+      "useCases": ["Messaging"],
+      "integrations": ["Chat", "Gmail"],
+      "difficulty": "Basic"
+    },
+    {
+      "id": "linkedin-connection-logger",
+      "title": "LinkedIn Connection Logger",
+      "description": "On new LinkedIn connection, append name, title, profile link to Google Sheets.",
+      "useCases": ["Lead Enrichment"],
+      "integrations": ["LinkedIn", "Google Sheets"],
+      "difficulty": "Basic"
+    },
+    {
+      "id": "slack-to-drive-sync",
+      "title": "Slack → Google Drive Sync",
+      "description": "Backup Slack channel uploads to Google Drive and track links in Sheets.",
+      "useCases": ["Backup"],
+      "integrations": ["Slack", "Google Drive", "Google Sheets"],
+      "difficulty": "Basic"
+    },
+    {
+      "id": "gcal-to-sheets",
+      "title": "Google Calendar → Sheets",
+      "description": "Log new Google Calendar events (name, date, attendees) in Google Sheets.",
+      "useCases": ["Scheduling", "Logging"],
+      "integrations": ["Google Calendar", "Google Sheets"],
+      "difficulty": "Basic"
+    },
+    {
+      "id": "form-to-sheets",
+      "title": "Simple Registration Form → Sheets",
+      "description": "Append form submissions into Google Sheets.",
+      "useCases": ["Forms"],
+      "integrations": ["Registration Form", "Google Sheets"],
+      "difficulty": "Basic"
+    },
+    {
+      "id": "docs-to-gmail-share",
+      "title": "Docs → Gmail Share",
+      "description": "Email yourself when a new Google Doc is created, including the link.",
+      "useCases": ["Notifications"],
+      "integrations": ["Docs", "Gmail"],
+      "difficulty": "Basic"
+    },
+    {
+      "id": "sheets-to-slack-update",
+      "title": "Sheets → Slack Update",
+      "description": "Send a Slack message summarizing each newly added Google Sheets row.",
+      "useCases": ["Notifications"],
+      "integrations": ["Google Sheets", "Slack"],
+      "difficulty": "Basic"
+    },
+    {
+      "id": "file-upload-to-drive",
+      "title": "File Upload → Drive",
+      "description": "When a new local file appears, upload it to Google Drive and log to Sheets.",
+      "useCases": ["Backup"],
+      "integrations": ["Files", "Google Drive", "Google Sheets"],
+      "difficulty": "Basic"
+    },
+    {
+      "id": "linkedin-profile-scraper",
+      "title": "LinkedIn Profile Scraper",
+      "description": "Scrape LinkedIn profile details with Apify and append to Google Sheets.",
+      "useCases": ["Lead Enrichment"],
+      "integrations": ["LinkedIn", "Apify", "Google Sheets"],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "form-to-tavily-validator",
+      "title": "Form → Tavily Email Validator",
+      "description": "Validate submitted emails with Tavily and write validated entries to Sheets.",
+      "useCases": ["Data Quality"],
+      "integrations": ["Registration Form", "Tavily", "Google Sheets"],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "reddit-to-youtube-ideas",
+      "title": "Reddit → YouTube Ideas",
+      "description": "Summarize Reddit posts with ChatGPT into 3 YouTube content ideas and store in Sheets.",
+      "useCases": ["Content"],
+      "integrations": ["Reddit", "ChatGPT", "Google Sheets"],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "slack-to-ai-summarizer",
+      "title": "Slack → AI Summarizer",
+      "description": "Summarize last 24h Slack messages with ChatGPT and save a report in Google Docs.",
+      "useCases": ["Reporting"],
+      "integrations": ["Slack", "ChatGPT", "Docs"],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "drive-to-firecrawl-index",
+      "title": "Google Drive → Firecrawl Indexing",
+      "description": "Index new Google Drive files with Firecrawl and write the searchable link to Sheets.",
+      "useCases": ["Knowledge Base"],
+      "integrations": ["Google Drive", "Firecrawl", "Google Sheets"],
+      "difficulty": "Medium"
+    },
+    {
+      "id": "ai-lead-enrichment",
+      "title": "AI-Powered Lead Enrichment",
+      "description": "Scrape LinkedIn/companies (Apify) + crawl (Firecrawl) + enrich with ChatGPT/Gemini → Google Doc report.",
+      "useCases": ["Lead Enrichment", "AI"],
+      "integrations": ["Apify", "Firecrawl", "ChatGPT", "Gemini", "Docs"],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "multi-agent-research-assistant",
+      "title": "Multi-Agent Research Assistant",
+      "description": "Tavily sources; Gemini + ChatGPT + Claude summarize and cross-check; outputs report to Docs + Sheets.",
+      "useCases": ["Research", "AI"],
+      "integrations": ["Tavily", "Gemini", "ChatGPT", "Claude", "Docs", "Google Sheets"],
+      "difficulty": "Advanced"
+    }
+  ]
+}
